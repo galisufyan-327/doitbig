@@ -51,7 +51,7 @@ const Services = () => {
                 </div>
               </div>
 
-              {/* <div className="col-xl-3 col-lg-6">
+              <div className="col-xl-3 col-lg-6" id="consultancy">
                 <div className="service-block text-center">
                   <img src="images/services/consultancy.svg" alt="design" />
                   <h4>Consultancy</h4>
@@ -68,7 +68,7 @@ const Services = () => {
                     </ul>
                   </div>
                 </div>
-              </div> */}
+              </div>
               <div className="col-xl-3 col-lg-6">
                 <div className="service-block text-center">
                   <img src="images/services/mobileapp.svg" alt="design" />

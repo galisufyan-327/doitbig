@@ -14,10 +14,7 @@ const Home = () => {
             <p className="larger-txt">
               Great design and development solutions for your business.
             </p>
-            <a
-              href="#cynic-projects"
-              className="custom-btn secondary-btn page-scroll"
-            >
+            <a href="#contact" className="custom-btn secondary-btn page-scroll">
               Get started
             </a>
           </div>

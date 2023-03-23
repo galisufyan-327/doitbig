@@ -1467,6 +1467,9 @@ header {
   font-style: normal;
   font-weight: 300;
 }
+.consultancy {
+  margin-top: -2rem;
+}
 .review-card .media a {
   text-decoration: none;
 }
