@@ -23,9 +23,6 @@ const ProjectModal = ({ show, handleClose, project }) => {
               <span>Featured Design</span>
               {project.title}
             </h2>
-            <a href="#" className="custom-btn secondary-btn">
-              LIVE PREVIEW
-            </a>
           </div>
           <div
             style={{

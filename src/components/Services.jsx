@@ -51,7 +51,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className="col-xl-3 col-lg-6">
+              {/* <div className="col-xl-3 col-lg-6">
                 <div className="service-block text-center">
                   <img src="images/services/consultancy.svg" alt="design" />
                   <h4>Consultancy</h4>
@@ -68,7 +68,7 @@ const Services = () => {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="col-xl-3 col-lg-6">
                 <div className="service-block text-center">
                   <img src="images/services/mobileapp.svg" alt="design" />
@@ -80,7 +80,7 @@ const Services = () => {
                   </p>
                   <div className="service-overlay">
                     <ul className="facilities text-left">
-                      /<li>Cross platform Apps</li>
+                      <li>Cross platform Apps</li>
                       <li>Android Apps</li>
                       <li>iPhone Apps</li>
                       <li>Marketing & maintenance</li>

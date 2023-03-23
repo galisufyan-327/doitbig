@@ -891,6 +891,7 @@ header {
 .service-block:hover .service-overlay {
   opacity: 1;
   visibility: visible;
+  font-weight: 500;
 }
 
 /* -- Features css
@@ -1476,7 +1477,7 @@ header {
 /* -- Location css
 ----------------------------- -- */
 .location {
-  /* background-image: url(../images/banner/inner-section-bg-right.png); */
+  background-image: url(../../public/images/banner/inner-section-bg-right.png);
   background-position: right bottom;
   background-size: auto;
   background-repeat: no-repeat;
