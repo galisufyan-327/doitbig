@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./styles/vendor/bootstrap.min.css";
+import "./styles/vendor/magnific-popup.css";
+import "./styles/vendor/owl.carousel.min.css";
+import "./styles/vendor/owl.theme.default.min.css";
+import "./styles/cynic-responsive.css";
+import "./styles/cynic.css";
+import "./styles/fontawesome-all.min.css";
+import "./styles/miniline.css";
+import "./styles/process.css";
+
+import Main from "./pages/Main";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
