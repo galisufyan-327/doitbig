@@ -6881,6 +6881,10 @@ fieldset:disabled .btn {
   position: relative;
   width: 100%;
   overflow: hidden;
+  border-radius: 1rem !important;
+}
+.carousel-inner img {
+  border-radius: 1rem !important;
 }
 
 .carousel-inner::after {

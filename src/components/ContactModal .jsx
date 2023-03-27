@@ -47,7 +47,6 @@ const ContactModal = ({ show, handleClose }) => {
                 <button
                   type="button"
                   className="custom-btn secondary-btn w-100"
-                  onClick={() => console.log("clicked")}
                 >
                   GET A QUOTE
                 </button>

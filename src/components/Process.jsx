@@ -33,9 +33,7 @@ const Process = () => {
             <div className="line-text">Launching</div>
           </div>
         </div>
-        <div style={{ margin: "5rem" }} id="contact">
-          .
-        </div>
+        <div style={{ margin: "5rem" }}>.</div>
       </div>
     </section>
   );

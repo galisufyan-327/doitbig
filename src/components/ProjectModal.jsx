@@ -1,14 +1,33 @@
 import React, { useState } from "react";
 import { Button, Carousel, Modal } from "react-bootstrap";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
+
+const NextIcon = () => {
+  return (
+    <button className="next-icon">
+      <img src="../../images/arrow-right.svg" alt="" />
+    </button>
+  );
+};
+
+const PrevIcon = () => {
+  return (
+    <button className="prev-icon">
+      {" "}
+      <img src="../../images/arrow-left.svg" alt="" />
+    </button>
+  );
+};
+
 const ProjectModal = ({ show, handleClose, project }) => {
   const { projectImgs } = project;
+
   return (
     <>
       <Modal
         show={show}
         onHide={() => handleClose()}
-        // fullscreen={true}
         className="modal modal-width"
       >
         <Modal.Header>
@@ -31,7 +50,13 @@ const ProjectModal = ({ show, handleClose, project }) => {
               flexDirection: "column",
             }}
           >
-            <Carousel controls={true} interval={null}>
+            <Carousel
+              controls={true}
+              interval={null}
+              indicators={false}
+              nextIcon={<NextIcon />}
+              prevIcon={<PrevIcon />}
+            >
               {project.projectImgs.map((img) => {
                 return (
                   <Carousel.Item>

@@ -3,6 +3,7 @@ import Logo from "./icons/Logo";
 
 const Header = () => {
   const [collapse, setCollapse] = useState(true);
+
   return (
     <div className="d-flex justify-content-center">
       <div className="header-container">

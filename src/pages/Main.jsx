@@ -4,9 +4,9 @@ import Home from "../components/Home";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import Achievements from "../components/Achievements";
-import Work from "../components/Work";
 import Contact from "../components/Contact";
 import Process from "../components/Process";
+import Work from "../components/Work";
 
 const Main = () => {
   useEffect(() => {

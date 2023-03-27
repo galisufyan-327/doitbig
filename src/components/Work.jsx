@@ -1,7 +1,51 @@
-import React, { useState } from "react";
-import { Card } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import ProjectCard from "./ProjectCard";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 3,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
+const CustomRightArrow = ({ onClick, ...rest }) => {
+  const {
+    onMove,
+    carouselState: { currentSlide, deviceType },
+  } = rest;
+  return (
+    <button className=" arrow-right" onClick={() => onClick()}>
+      <AiOutlineRight className="icon" />
+    </button>
+  );
+};
+
+const CustomLeftArrow = ({ onClick, ...rest }) => {
+  const {
+    onMove,
+    carouselState: { currentSlide, deviceType },
+  } = rest;
+  return (
+    <button className="arrow-left" onClick={() => onClick()}>
+      <AiOutlineLeft className="icon" />
+    </button>
+  );
+};
 
 const Work = () => {
   const projects = [
@@ -33,6 +77,7 @@ const Work = () => {
       ],
     },
   ];
+
   return (
     <section className="projects section-gap grey-bg">
       <div className="container">
@@ -41,9 +86,20 @@ const Work = () => {
 
       <div className="project-showcase">
         <div className="projects-carousel cards-wrapper">
-          {projects.map((project, index) => {
-            return <ProjectCard key={index} project={project} />;
-          })}
+          <Carousel
+            customRightArrow={<CustomRightArrow />}
+            customLeftArrow={<CustomLeftArrow />}
+            responsive={responsive}
+            // infinite={true}
+            keyBoardControl={true}
+            transitionDuration={500}
+            containerClass="carousel-container"
+            itemClass="img-card-item"
+          >
+            {projects.map((project, index) => {
+              return <ProjectCard key={index} project={project} />;
+            })}
+          </Carousel>
         </div>
       </div>
       <div id="process"></div>

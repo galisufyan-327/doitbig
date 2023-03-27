@@ -27,7 +27,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact-info">
+        <div className="contact-info" id="contact">
           <div className="row justify-content-between">
             <div className="col-lg-4 col-md-6">
               <div className="info">
