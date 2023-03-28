@@ -1,4 +1,3 @@
-import "./App.css";
 import "./styles/vendor/bootstrap.min.css";
 import "./styles/vendor/magnific-popup.css";
 import "./styles/vendor/owl.carousel.min.css";

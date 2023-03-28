@@ -90,7 +90,6 @@ const Work = () => {
             customRightArrow={<CustomRightArrow />}
             customLeftArrow={<CustomLeftArrow />}
             responsive={responsive}
-            // infinite={true}
             keyBoardControl={true}
             transitionDuration={500}
             containerClass="carousel-container"
